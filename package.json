@@ -4,7 +4,7 @@
     "start": "tsc && serve ./"
   },
   "dependencies": {
-    "preact": "latest"
+    "preact": "^8.4.2"
   },
   "devDependencies": {
     "@pika/web": "^0.3.2",

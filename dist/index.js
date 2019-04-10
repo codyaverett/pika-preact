@@ -6,14 +6,15 @@ class App extends Component {
     }
     render({ page = '' }, { todo = [] }) {
         return (h("div", { class: "app" },
-            h(Header, { name: `ToDo's (${page})` }),
+            h(Header, { name: `ToDo ${page}` }),
             h("ul", null, todo.map((todo, i) => h("li", { key: i }, todo))),
-            h("button", { onClick: () => this.addTodo() }, "Add Todo"),
+            h("button", { class: "btn", onClick: () => this.addTodo() }, "\u2728 Add Item"),
             h(Footer, null, "footer content here")));
     }
 }
-const Header = ({ name = "" }) => h("h1", null,
-    name,
-    " List");
+const Header = ({ name = "" }) => h("header", null,
+    h("h2", null,
+        name,
+        " List"));
 const Footer = (props) => h("footer", Object.assign({}, props));
-render(h(App, { page: "All" }), document.querySelector('#app'));
+render(h(App, { page: "List" }), document.querySelector('#app'));

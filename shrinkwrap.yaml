@@ -1643,6 +1643,6 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@pika/web': ^0.3.2
-  preact: latest
+  preact: ^8.4.2
   serve: ^10.1.2
   typescript: ^3.0.0
