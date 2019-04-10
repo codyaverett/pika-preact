@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "prepare": "pika-web",
+    "start": "tsc && serve ./"
+  },
+  "dependencies": {
+    "preact": "latest"
+  },
+  "devDependencies": {
+    "@pika/web": "^0.3.2",
+    "serve": "^10.1.2",
+    "typescript": "^3.0.0"
+  }
+}
